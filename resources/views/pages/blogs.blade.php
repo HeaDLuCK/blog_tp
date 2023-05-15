@@ -29,7 +29,7 @@
                             </div>
                             <p class="card-text d-flex justify-content-between">
                                 <small class="text-body-secondary">created at : {{ $row->created_at }}</small>
-                                <small class="text-body-secondary">updated {{ $row->created_at_difference() }}</small>
+                                <small class="text-body-secondary">{{ 'updated ' . $row->created_at_difference() }}</small>
                             </p>
 
                             <p class="card-text">{{ $row->clause }}</p>
